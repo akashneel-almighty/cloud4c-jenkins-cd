@@ -3,24 +3,24 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: ashu-appweb
-  name: ashu-appweb
-  namespace: ashu-final-app
+    app: akashneel-appweb
+  name: akashneel-appweb
+  namespace: akashneel-final-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: ashu-appweb
+      app: akashneel-appweb
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: ashu-appweb
+        app: akashneel-appweb
     spec:
       containers:
-      - image: dockerashu/ashuweb:sec-check16
-        name: ashuweb
+      - image: akashneel/akashneelweb:sec-check16
+        name: akashneelweb
         ports:
         - containerPort: 80
         resources: {}
