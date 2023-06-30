@@ -19,7 +19,7 @@ spec:
         app: akashneel-appweb
     spec:
       containers:
-      - image: akashneel/akashneelweb:sec-check16
+      - image: akashneel/akashneelsec:version11
         name: akashneelweb
         ports:
         - containerPort: 80
